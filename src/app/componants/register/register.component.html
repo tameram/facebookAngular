@@ -1,0 +1,29 @@
+<section class="register">
+
+    <div class="header">
+        <h3>
+            sign up
+        </h3>
+        <p>it's qick and easy</p>
+
+    </div>
+    <div class="body">
+        <form #form="ngForm">
+
+            <div class="user_name">
+                <input type="text" placeholder="First Name" name="fname" ngModel >
+                <input type="text" placeholder="LastName Name" name="lname" ngModel >
+            </div>
+
+            <div class="email_password">
+                <input type="text" placeholder="Email" name="email" ngModel >
+                <input type="text" placeholder="Image URL" name="avatar" ngModel >
+                <input type="password" placeholder="Password" name="password" ngModel >
+
+            </div>
+        </form>
+    </div>
+    <p>By clicking Sign Up, you agree to our Terms, Data Policy and Cookies Policy. You may receive SMS Notifications from us and can opt out any time.</p>
+    <button type="submit" class="submit-button" [mat-dialog-close] = "form.value">Sign up</button>
+
+</section>
